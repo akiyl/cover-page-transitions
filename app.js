@@ -25,13 +25,15 @@ logo.addEventListener('click', () => {
 
     overlay_top.style.transform = ('translateY(-500px)');
     overlay_bottom.style.transform = ('translateY(500px)');
+    overlay_top.style.transitionDelay = ('1s')
+    overlay_bottom.style.transitionDelay = ('1s')
     preview.style.opacity = ('0');
     preview.style.pointerEvents = ('none');
     frame.style.color = ('#000')
     preview.style.transform = ('translateY(-100px)')
     img_inner.style.transform = ('translateY(270px)')
-    preview_text.style.transform = ('translateY(30)')
-    preview_head.style.transform = ('translateY(30)')
+        // preview_text.style.transform = ('translateY(30)')
+        // preview_head.style.transform = ('translateY(30)')
     preview.style.transitionDelay = ('0s')
 })
 clk.addEventListener('click', () => {
@@ -43,11 +45,11 @@ clk.addEventListener('click', () => {
     preview.style.opacity = ('1');
     preview.style.pointerEvents = ('auto');
     frame.style.color = ('#a17445')
-    preview.style.transitionDelay = ('1s');
+
     preview.style.transform = ('translateY(100px)')
     img_inner.style.transform = ('translateY(0px)')
-    preview_text.style.transform = ('translateY(0)')
-    preview_head.style.transform = ('translateY(0)')
+        // preview_text.style.transform = ('translateY(0)')
+        // preview_head.style.transform = ('translateY(0)')
 
 
 

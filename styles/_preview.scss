@@ -9,21 +9,19 @@
     position: fixed;
     opacity: 0;
     transition: 1s ease;
-    // transition-delay: 0s;
+    transition-delay: 1s;
     transform: translateY(-100px);
     top: 0;
 }
 
-p {
-    transform: translateY(30px);
-    transition: 2s ease;
-}
-
-h3 {
-    transform: translateY(30px);
-    transition: 2s ease;
-}
-
+// p {
+//     transform: translateY(30px);
+//     transition: 2s ease;
+// }
+// h3 {
+//     transform: translateY(30px);
+//     transition: 2s ease;
+// }
 .preview_2020 {
     display: grid;
     grid-column-gap: 10vw;
