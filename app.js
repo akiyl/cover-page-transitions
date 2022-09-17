@@ -3,12 +3,12 @@
 // Animate via selector
 
 // import '../styles/style.scss'
-const preview_text = document.getElementsByTagName('P')
-const preview_head = document.querySelectorAll('h3')
-const img_inner = document.querySelector('.preview_image_inner')
-const preview = document.querySelector('.previews')
-const frame = document.querySelector('.frame')
-const logo = document.querySelector('.logo_aroww')
+const preview_text = document.getElementsByTagName('P');
+const preview_head = document.querySelectorAll('h3');
+const img_inner = document.querySelector('.preview_image_inner');
+const preview = document.querySelector('.previews');
+const frame = document.querySelector('.frame');
+const logo = document.querySelector('.logo_aroww');
 const hover = document.querySelector('.hov');
 const hover2 = document.querySelector('.hov2');
 const hover3 = document.querySelector('.hov3');
@@ -38,7 +38,7 @@ clk.addEventListener('click', () => {
     console.log("bbbbb");
     overlay_top.style.transform = ('translateY(500px)');
     overlay_bottom.style.transform = ('translateY(-500px)');
-
+    preview.style.transitionDelay = ('1s')
     preview.style.opacity = ('1');
     preview.style.pointerEvents = ('auto');
     frame.style.color = ('#a17445')
