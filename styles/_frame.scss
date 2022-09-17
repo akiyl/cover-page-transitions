@@ -1,0 +1,10 @@
+.frame {
+    text-transform: uppercase;
+    display: grid;
+    justify-content: space-between;
+    font-family: 'Acumin Pro', serif;
+    grid-template-columns: repeat(3, 1fr);
+    // background-color: red;
+    z-index: 3;
+    position: relative;
+}
