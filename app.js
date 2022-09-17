@@ -22,7 +22,7 @@ const child = preview.children;
 // let pris = hover2.parentElement.children[2];
 // console.log(hover2.parentElement.children[2].children)
 logo.addEventListener('click', () => {
-    console.log("ffffff")
+
     overlay_top.style.transform = ('translateY(-500px)');
     overlay_bottom.style.transform = ('translateY(500px)');
     preview.style.opacity = ('0');
