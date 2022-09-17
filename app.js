@@ -32,6 +32,7 @@ logo.addEventListener('click', () => {
     img_inner.style.transform = ('translateY(270px)')
     preview_text.style.transform = ('translateY(30)')
     preview_head.style.transform = ('translateY(30)')
+    preview.style.transitionDelay = ('0s')
 })
 clk.addEventListener('click', () => {
     // animate('overlay_top', { y: ['0', '500px'] }, { duration: 0.2, easing: 'ease-out' })
