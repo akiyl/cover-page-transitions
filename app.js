@@ -21,6 +21,30 @@ const overlay_bottom = document.querySelector('.overlay_screen2');
 const child = preview.children;
 // let pris = hover2.parentElement.children[2];
 // console.log(hover2.parentElement.children[2].children)
+let preview_open = () => {
+    overlay_top.style.transform = ('translateY(500px)');
+    overlay_bottom.style.transform = ('translateY(-500px)');
+    preview.style.transitionDelay = ('1s')
+    preview.style.opacity = ('1');
+    preview.style.pointerEvents = ('auto');
+    frame.style.color = ('#a17445')
+
+    preview.style.transform = ('translateY(100px)')
+    img_inner.style.transform = ('translateY(0px)')
+}
+let preview_close = () => {
+    overlay_top.style.transform = ('translateY(-500px)');
+    overlay_bottom.style.transform = ('translateY(500px)');
+    // overlay_top.style.transitionDelay = ('1s')
+    // overlay_bottom.style.transitionDelay = ('1s')
+    preview.style.opacity = ('0');
+    preview.style.pointerEvents = ('none');
+    frame.style.color = ('#000')
+    preview.style.transform = ('translateY(-100px)')
+    img_inner.style.transform = ('translateY(270px)')
+    preview.style.transitionDelay = ('0s')
+
+}
 logo.addEventListener('click', () => {
 
     overlay_top.style.transform = ('translateY(-500px)');
@@ -32,63 +56,46 @@ logo.addEventListener('click', () => {
     frame.style.color = ('#000')
     preview.style.transform = ('translateY(-100px)')
     img_inner.style.transform = ('translateY(270px)')
-        // preview_text.style.transform = ('translateY(30)')
-        // preview_head.style.transform = ('translateY(30)')
     preview.style.transitionDelay = ('0s')
+
+
 })
 clk.addEventListener('click', () => {
-    // animate('overlay_top', { y: ['0', '500px'] }, { duration: 0.2, easing: 'ease-out' })
-    console.log("bbbbb");
-    overlay_top.style.transform = ('translateY(500px)');
-    overlay_bottom.style.transform = ('translateY(-500px)');
-    preview.style.transitionDelay = ('1s')
-    preview.style.opacity = ('1');
-    preview.style.pointerEvents = ('auto');
-    frame.style.color = ('#a17445')
 
-    preview.style.transform = ('translateY(100px)')
-    img_inner.style.transform = ('translateY(0px)')
-        // preview_text.style.transform = ('translateY(0)')
-        // preview_head.style.transform = ('translateY(0)')
-
-
-
-
-
-
-
+    preview_open()
 })
 
 hover2.addEventListener('mouseover', () => {
 
-    image2.style.transform = 'scale(1.2)'
-    image2.style.transition = '1s ease'
+    scalein(image2)
 
 
 })
 hover2.addEventListener('mouseout', () => {
-    image2.style.transform = 'scale(1)'
-    image2.style.transition = '0.5s ease'
+    scaleout(image2)
 })
 hover3.addEventListener('mouseover', () => {
 
-    image3.style.transform = 'scale(1.2)'
-    image3.style.transition = '1s ease'
+    scalein(image3)
 
 
 })
 hover3.addEventListener('mouseout', () => {
-    image3.style.transform = 'scale(1)'
-    image3.style.transition = '0.5s ease'
+    scaleout(image3)
 })
 hover.addEventListener('mouseover', () => {
 
-    image.style.transform = 'scale(1.2)'
-    image.style.transition = '1s ease'
-
+    scalein(image)
 
 })
 hover.addEventListener('mouseout', () => {
-    image.style.transform = 'scale(1)'
-    image.style.transition = '0.5s ease'
+    scaleout(image)
 })
+let scalein = (element) => {
+    element.style.transform = 'scale(1.2)'
+    element.style.transition = '1s ease'
+}
+let scaleout = (element) => {
+    element.style.transform = 'scale(1)'
+    element.style.transition = '0.5s ease'
+}
