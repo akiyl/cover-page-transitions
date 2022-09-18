@@ -47,16 +47,7 @@ let preview_close = () => {
 }
 logo.addEventListener('click', () => {
 
-    overlay_top.style.transform = ('translateY(-500px)');
-    overlay_bottom.style.transform = ('translateY(500px)');
-    overlay_top.style.transitionDelay = ('1s')
-    overlay_bottom.style.transitionDelay = ('1s')
-    preview.style.opacity = ('0');
-    preview.style.pointerEvents = ('none');
-    frame.style.color = ('#000')
-    preview.style.transform = ('translateY(-100px)')
-    img_inner.style.transform = ('translateY(270px)')
-    preview.style.transitionDelay = ('0s')
+    preview_close()
 
 
 })
