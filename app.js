@@ -3,17 +3,23 @@
 // Animate via selector
 
 // import '../styles/style.scss'
-const preview_text = document.getElementsByTagName('P');
-const preview_head = document.querySelectorAll('h3');
+const preview_2021 = document.querySelector('.preview_2021');
+const preview_2020 = document.querySelector('.preview_2020');
+const preview_2022 = document.querySelector('.preview_2022');
 const img_inner = document.querySelector('.preview_image_inner');
 const preview = document.querySelector('.previews');
-const frame = document.querySelector('.frame');
+const frame = document.getElementById('frame')
+const frame_style = document.querySelector('.frame_styles');
 const logo = document.querySelector('.logo_aroww');
+const logo_bennet = document.getElementById('logo_aroww_bennet');
+const logo_hughes = document.getElementById('logo_aroww_hughes');
 const hover = document.querySelector('.hov');
 const hover2 = document.querySelector('.hov2');
 const hover3 = document.querySelector('.hov3');
 const image2 = document.querySelector('.item_image_inner2');
 const clk = document.getElementById('click2')
+const clk3 = document.getElementById('click3')
+const clk4 = document.getElementById('click4')
 const image = document.querySelector('.item_image_inner');
 const image3 = document.querySelector('.item_image_inner3');
 const overlay_top = document.querySelector('.overlay_screen');
@@ -21,22 +27,27 @@ const overlay_bottom = document.querySelector('.overlay_screen2');
 const child = preview.children;
 // let pris = hover2.parentElement.children[2];
 // console.log(hover2.parentElement.children[2].children)
-let preview_open = () => {
+let preview_open = (element) => {
+    element.style.opacity = ('1')
+
+    element.style.pointerEvents = ('auto')
     overlay_top.style.transform = ('translateY(500px)');
     overlay_bottom.style.transform = ('translateY(-500px)');
-    preview.style.transitionDelay = ('1s')
+    preview.style.transitionDelay = ('1.5s')
     preview.style.opacity = ('1');
     preview.style.pointerEvents = ('auto');
     frame.style.color = ('#a17445')
 
-    preview.style.transform = ('translateY(100px)')
+    element.style.transform = ('translateY(100px)')
     img_inner.style.transform = ('translateY(0px)')
 }
-let preview_close = () => {
+let preview_close = (element) => {
+    element.style.opacity = ('0')
+    element.style.pointerEvents = ('none')
     overlay_top.style.transform = ('translateY(-500px)');
     overlay_bottom.style.transform = ('translateY(500px)');
-    // overlay_top.style.transitionDelay = ('1s')
-    // overlay_bottom.style.transitionDelay = ('1s')
+    overlay_top.style.transitionDelay = ('1s')
+    overlay_bottom.style.transitionDelay = ('1s')
     preview.style.opacity = ('0');
     preview.style.pointerEvents = ('none');
     frame.style.color = ('#000')
@@ -47,14 +58,29 @@ let preview_close = () => {
 }
 logo.addEventListener('click', () => {
 
-    preview_close()
+    preview_close(preview_2020)
 
 
 })
 clk.addEventListener('click', () => {
 
-    preview_open()
+    preview_open(preview_2020)
 })
+clk3.addEventListener('click', () => {
+
+    preview_open(preview_2021)
+})
+logo_bennet.addEventListener('click', () => {
+
+    preview_close(preview_2021)
+})
+clk4.addEventListener('click', () => {
+    preview_open(preview_2022)
+})
+logo_hughes.addEventListener('click', () => {
+    preview_close(preview_2022)
+})
+
 
 hover2.addEventListener('mouseover', () => {
 

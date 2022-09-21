@@ -1,4 +1,4 @@
-.frame {
+#frame {
     text-transform: uppercase;
     display: grid;
     justify-content: space-between;
@@ -6,5 +6,11 @@
     grid-template-columns: repeat(3, 1fr);
     // background-color: red;
     z-index: 3;
+    // color: black;
     position: relative;
+}
+
+.frame_styles {
+    // transform: translateY(100px);
+    color: ('#a17445');
 }
