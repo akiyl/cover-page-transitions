@@ -7,10 +7,15 @@
     // background-color: red;
     z-index: 3;
     // color: black;
+    // transform: translateY(100px);
     position: relative;
+    transform: all 0.5s ease;
 }
 
 .frame_styles {
-    // transform: translateY(100px);
-    color: ('#a17445');
+    top: -110%;
+    transform: translateY(46px);
+    color: #a17445;
+    transition: all 1s ease;
+    transition-delay: 1s;
 }

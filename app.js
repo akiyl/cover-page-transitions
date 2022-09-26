@@ -3,13 +3,14 @@
 // Animate via selector
 
 // import '../styles/style.scss'
+
 const preview_2021 = document.querySelector('.preview_2021');
 const preview_2020 = document.querySelector('.preview_2020');
 const preview_2022 = document.querySelector('.preview_2022');
-const img_inner = document.querySelector('.preview_image_inner');
+const img_inner = document.querySelectorAll('.preview_image_inner');
 const preview = document.querySelector('.previews');
 const frame = document.getElementById('frame')
-const frame_style = document.querySelector('.frame_styles');
+    // const frame_style = document.querySelector('.frame_styles');
 const logo = document.querySelector('.logo_aroww');
 const logo_bennet = document.getElementById('logo_aroww_bennet');
 const logo_hughes = document.getElementById('logo_aroww_hughes');
@@ -29,30 +30,41 @@ const child = preview.children;
 // console.log(hover2.parentElement.children[2].children)
 let preview_open = (element) => {
     element.style.opacity = ('1')
-
+    frame.classList.add('frame_styles')
+        // frame_style.style.transform = ('translateY(0px)')
     element.style.pointerEvents = ('auto')
     overlay_top.style.transform = ('translateY(500px)');
     overlay_bottom.style.transform = ('translateY(-500px)');
     preview.style.transitionDelay = ('1.5s')
     preview.style.opacity = ('1');
     preview.style.pointerEvents = ('auto');
-    frame.style.color = ('#a17445')
+    // frame.style.color = ('#a17445')
 
     element.style.transform = ('translateY(100px)')
-    img_inner.style.transform = ('translateY(0px)')
+    console.log(img_inner)
+    img_inner.forEach(e => {
+        e.style.transform = ('translateY(0px)')
+
+    })
 }
 let preview_close = (element) => {
     element.style.opacity = ('0')
     element.style.pointerEvents = ('none')
+    frame.classList.remove('frame_styles');
     overlay_top.style.transform = ('translateY(-500px)');
     overlay_bottom.style.transform = ('translateY(500px)');
     overlay_top.style.transitionDelay = ('1s')
     overlay_bottom.style.transitionDelay = ('1s')
     preview.style.opacity = ('0');
     preview.style.pointerEvents = ('none');
-    frame.style.color = ('#000')
+    // frame.style.color = ('#000')
     preview.style.transform = ('translateY(-100px)')
-    img_inner.style.transform = ('translateY(270px)')
+
+    img_inner.forEach(e => {
+        e.style.transform = ('translateY(270px)')
+
+    })
+
     preview.style.transitionDelay = ('0s')
 
 }
