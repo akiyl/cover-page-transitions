@@ -220,10 +220,10 @@ h2 {
   background-color: black;
   color: white;
   height: 84vh;
-  top: 130px;
   z-index: 2;
   pointer-events: none;
   text-transform: uppercase;
+  position: absolute;
   opacity: 0;
   transition: 1s ease;
   transform: translateY(-100px);
