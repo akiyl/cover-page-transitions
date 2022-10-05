@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "motion": "^10.14.2"
+    "motion": "^10.14.2",
+    "zhs": "^1.0.0"
   }
 }
