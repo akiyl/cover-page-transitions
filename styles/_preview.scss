@@ -133,6 +133,7 @@
  
     .previews{
         position: absolute;
+        top: 50%;
 
     }
     .preview_start{
@@ -141,6 +142,7 @@
     .preview_2020{
         grid-template-rows: auto;
         grid-template-columns: auto;
+        position: static;
     }  .preview_2021{
         grid-template-rows: auto;
         grid-template-columns: auto;

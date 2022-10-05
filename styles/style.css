@@ -158,6 +158,9 @@ h2 {
     grid-template-columns: none;
     grid-row-gap: 10vw;
   }
+  .item_discp {
+    font-size: 14px;
+  }
 }
 .overlays {
   position: fixed;
@@ -311,6 +314,7 @@ h2 {
 @media screen and (max-width: 53rem) {
   .previews {
     position: absolute;
+    top: 50%;
   }
   .preview_start {
     grid-area: auto;
@@ -318,6 +322,7 @@ h2 {
   .preview_2020 {
     grid-template-rows: auto;
     grid-template-columns: auto;
+    position: static;
   }
   .preview_2021 {
     grid-template-rows: auto;
