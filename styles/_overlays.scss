@@ -1,0 +1,28 @@
+.overlays {
+    position: fixed;
+    display: grid;
+    top: 0;
+    left: 0;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 100%;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.overlay_screen {
+    height: 50vh;
+    background-color: black;
+    width: 100vw;
+    position: relative;
+    top: -500px;
+    transition: all 1s ease;
+}
+
+.overlay_screen2 {
+    height: 50vh;
+    background-color: black;
+    width: 100vw;
+    position: relative;
+    top: 500px;
+    transition: all 1s ease;
+}

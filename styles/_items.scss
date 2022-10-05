@@ -1,0 +1,84 @@
+.content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 5vw;
+}
+
+.item {
+    grid-template-columns: 100%;
+    // margin-bottom: 5rem;
+    display: grid;
+}
+
+.item_image {
+    aspect-ratio: 500/333;
+    width: 100%;
+    overflow: hidden;
+}
+
+.item_image_inner {
+    height: 100%;
+    width: 100%;
+    background-image: url(https://tympanus.net/Tutorials/CoverPageTransition/1.1770e3b3.jpg);
+    background-size: cover;
+}
+
+.item_image_inner2 {
+    height: 100%;
+    width: 100%;
+    background-image: url(https://tympanus.net/Tutorials/CoverPageTransition/2.07ca36b5.jpg);
+    background-size: cover;
+}
+
+.item_image_inner3 {
+    height: 100%;
+    width: 100%;
+    background-image: url(https://tympanus.net/Tutorials/CoverPageTransition/3.f6f48295.jpg);
+    background-size: cover;
+}
+
+.item_discp {
+    margin: 2.5rem 0 5rem 0;
+    font-family: 'Acumin Pro', serif;
+    text-transform: uppercase;
+}
+
+.year {
+    font-family: 'Acumin Pro', serif;
+}
+
+.image_title {
+    margin-bottom: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+.item h3 {
+    text-align: center;
+    border: 1px solid;
+    border-radius: 2rem;
+    padding: 1rem 0;
+    border-color: #a0988a;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Acumin Pro', serif;
+    ;
+}
+
+#click2:hover,
+#click3:hover,
+#click4:hover {
+    color: #ffff;
+    background-color: black;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+@media screen AND (max-width:53em){
+    .content{
+        grid-template-columns: none;
+        grid-row-gap: 10vw;
+    }
+}

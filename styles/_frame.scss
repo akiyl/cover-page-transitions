@@ -1,0 +1,37 @@
+.frame {
+    text-transform: uppercase;
+    display: grid;
+    justify-content: space-between;
+    font-family: 'Acumin Pro', serif;
+    grid-template-columns: repeat(3, 1fr);
+    // background-color: red;
+    z-index: 3;
+    // color: black;
+    // transform: translateY(100px);
+    position: relative;
+    transform: all 0.5s ease;
+}
+a{
+    color: black;
+    margin-bottom: 2px;
+}
+
+.frame_styles {
+    top: -110%;
+    transform: translateY(46px);
+    color: #a17445;
+    transition: all 1s ease;
+    transition-delay: 1s;
+}
+@media screen AND (max-width:53em) {
+    .frame{
+grid-template-columns: 100%;
+grid-template-areas: "demo""dribble""sponsor";
+grid-row-gap: 1rem;
+font-size: 0.85rem;
+margin-bottom: 0.5rem;
+    }
+    .sponsor{
+        justify-self: end;
+    }
+}

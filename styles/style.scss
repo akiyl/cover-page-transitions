@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Acumin Pro";
+    
+}
+
+main {
+    padding: 1.5rem 2.5rem 3rem;
+    display: grid;
+    grid-row-gap: 8vh;
+}
+
+body {
+    background-color: #c6c1b7;
+}
+
+@import 'frame';
+@import 'fonts';
+@import 'items';
+@import 'overlays';
+@import 'preview';
