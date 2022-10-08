@@ -32,7 +32,7 @@ const child = preview.children;
 let preview_open = (element) => {
     element.style.opacity = ('1')
     frame.classList.add('frame_styles')
-        // frame_style.style.transform = ('translateY(0px)')
+        frame_style.style.transform = ('translateY(0px)')
     element.style.pointerEvents = ('auto')
     overlay_top.style.transform = ('translateY(500px)');
     overlay_bottom.style.transform = ('translateY(-500px)');
