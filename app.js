@@ -31,8 +31,7 @@ const child = preview.children;
 // console.log(hover2.parentElement.children[2].children)
 let preview_open = (element) => {
     element.style.opacity = ('1')
-    frame.classList.add('frame_styles')
-    frame_style.style.transform = ('translateY(0px)')
+  
     element.style.pointerEvents = ('auto')
     overlay_top.style.transform = ('translateY(500px)');
     overlay_bottom.style.transform = ('translateY(-500px)');
@@ -43,6 +42,8 @@ let preview_open = (element) => {
 
     element.style.transform = ('translateY(100px)')
     console.log(img_inner)
+    frame.classList.add('frame_styles')
+    // frame_style.style.transform = ('translateY(0px)')
     ancor.forEach(e =>{
         e.style.color = "#a17445"
     })

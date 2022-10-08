@@ -32,7 +32,7 @@ a {
 }
 
 .frame_styles {
-  top: -110%;
+  top: -40%;
   transform: translateY(46px);
   color: #a17445;
   transition: all 1s ease;
